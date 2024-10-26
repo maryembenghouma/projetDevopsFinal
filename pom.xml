@@ -16,6 +16,7 @@
 	<properties>
 		<java.version>1.8</java.version>
 		<maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
+        <sonar.java.binaries>target/classes</sonar.java.binaries> <!-- Ajouté -->
 	</properties>
 	<dependencies>
 		<dependency>
@@ -26,7 +27,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
@@ -54,7 +54,6 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
 	<build>
 		<plugins>
 			<plugin>
@@ -70,10 +69,5 @@
 				</configuration>
 			</plugin>
 		</plugins>
-		
-		
-
-
 	</build>
-
 </project>
